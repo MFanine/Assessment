@@ -1,27 +1,50 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.container {
-  width: 40%;
-  margin: 0 auto;
+body {
+  font-family: system-ui;
+  /* font-family: Arial, sans-serif; */
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.wrapp {
+  display: flex;
   height: 100%;
 }
 
-h1 {
-  position: center;
-  color: #4caf50;
-  font-family: "Gill Sans Extrabold", sans-serif;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 100px;
+  /* border: 1px solid black; */
 }
-h2 {
-  color: #4caf50;
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding-top: 3px;
 }
+
+.sub {
+  display: flex;
+  color: grey;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
 form {
   display: flex;
   flex-direction: column;
 }
 
-input[type="text"] {
+input {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 15px;
@@ -29,25 +52,47 @@ input[type="text"] {
 }
 
 button {
-  padding: 10px;
-  border-radius: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 12px;
+  border-radius: 18px;
+  margin: 14px 12px;
   border: none;
   background-color: #4caf50;
   color: white;
   cursor: pointer;
+  /* width: 84px;  */
 }
 
 button:hover {
   background-color: #45a049;
+  transform: scale(1.05);
 }
 
 .social-login {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  /* justify-content: space-between; */
+
+  i:hover {
+    transform: scale(1.1);
+  }
+
+  i {
+    margin: 40px;
+    width: 184px;
+    height: 84px;
+    transition: transform 0.4s; 
+  }
+}
+p {
+  /* margin-top: 20px; */
+  text-align: center;
 }
 
-p {
-  margin-top: 20px;
+h3 {
+  color: grey;
+  /* padding: 10px; */
+  margin: 0px;
   text-align: center;
 }
