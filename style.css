@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1 {
+  position: center;
+  color: #4caf50;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+h2 {
+  color: #4caf50;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
